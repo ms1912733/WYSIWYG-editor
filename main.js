@@ -251,13 +251,33 @@ function changeSize(n) {
 //   setTimeout(() => { onSelectionChange(); }, 20);
 // };
 
-// change the color of the whole text
-// var box = document.getElementById('note-pad');
-// let colorpicker = document.getElementById('foreColor');
-//   setInterval(() => {
-//   let color = colorpicker.value;
-//   box.style.color = color;
-//   }, 200);
+
+
+// Get Selection
+// sel = window.getSelection();
+// if (sel.rangeCount && sel.getRangeAt) {
+//   range = sel.getRangeAt(0);
+// }
+// let colorpicker1 = document.getElementById('foreColor');
+// // Set design mode to on
+// document.designMode = "on";
+// if (range) {
+//   sel.removeAllRanges();
+//   sel.addRange(range);
+// }
+// // Colorize text
+// document.execCommand("ForeColor", false, colorpicker1.value);
+// // Set design mode to off
+// document.designMode = "off";
+
+
+//change the color of the whole text
+var box = document.getElementById('note-pad');
+let colorpicker = document.getElementById('foreColor');
+  setInterval(() => {
+  let color = colorpicker.value;
+  box.style.color = color;
+  }, 200);
   
   // change the highlight color ,color, heading format of a text
   advancedOptionButton.forEach((button) => {
@@ -267,18 +287,18 @@ function changeSize(n) {
 });
 
 
-document.getElementById('addImage').onclick = function() {
-var img = new Image();
-    img.src = prompt("Url of a picture:");
+// document.getElementById('addImage').onclick = function() {
+// var img = new Image();
+//     img.src = prompt("Url of a picture:");
     
-    // check if the URL isn't valid or the resource isn't a picture
-    img.onerror = function() { alert("Provided URL does not point to a valid picture.") };
+//     // check if the URL isn't valid or the resource isn't a picture
+//     img.onerror = function() { alert("Provided URL does not point to a valid picture.") };
     
-    img.onload = function() {
-        document.getElementById("imgElement").src = img.src;
-    };
+//     img.onload = function() {
+//         document.getElementById("imgElement").src = img.src;
+//     };
 
-  }
+//   }
 
   // document.getElementById('addVideo').onclick = function() {
     
