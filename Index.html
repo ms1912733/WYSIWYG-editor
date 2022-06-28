@@ -1,0 +1,187 @@
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wp-webdeasy-comment-editor">
+    <div class="toolbar">
+      <div class="line">
+
+
+        <div class="box">
+          <div class="dropdown">
+            <select name = "Font "id="select_font" title="Font" onchange="changeFont(this);">
+              <option value="Arial">Arial</option>
+              <option value="Comic Sans MS">Comic Sans MS</option>
+              <option value="Times New Roman">Times New Roman</option>
+              <option value="Courier New">Courier New</option>
+              <option value="Verdana">Verdana</option>
+              <option value="Trebuchet MS">Trebuchet MS</option>
+              <option value="Arial Black">Arial Black</option>
+              <option value="Impact">Impact</option>
+              <option value="Bookman">Bookman</option>
+              <option value="Garamond">Garamond</option>
+              <option value="Palatino">Palatino</option>
+              <option value="Georgia">Georgia</option>
+            </select>
+          </div>
+  
+        <div class="dropdown">
+          <select name ="Font Size" id="fontsize" title="Font Size" onchange="changeSize(this);">
+            <option value="4">4</option>
+            <option value="8">8</option>
+            <option value="12">12</option>
+            <option value="16">16</option>
+            <option value="20">20</option>
+            <option value="24">24</option>
+            <option value="28">28</option>
+            <option value="32">32</option>
+            <option value="36">36</option>
+            <option value="40">40</option>
+            <option value="44">44</option>
+            <option value="48">48</option>
+            <option value="52">52</option>
+            <option value="56">56</option>
+            <option value="58">58</option>
+          </select>
+        </div>
+  
+        <div class="dropdown">
+          <select id="formatBlock" class="adv-option-button" onchange="changeHeading(this);">
+            <option value="H1">H1</option>
+            <option value="H2">H2</option>
+            <option value="H3">H3</option>
+            <option value="H4">H4</option>
+            <option value="H5">H5</option>
+            <option value="H6">H6</option>
+          </select>
+        </div>
+        </div>
+  
+        <div class ="box">
+          <div class="input-wrapper">
+            <input type="color" id="foreColor" class="adv-option-button" />
+            <label for="foreColor">Font Color</label>
+          </div>
+          
+          <div class="input-wrapper">
+            <input type="color" id="backColor" class="adv-option-button" />
+            <label for="backColor">Highlight Color</label>
+          </div>
+        </div>
+  
+        <div class="box">
+          <span class="editor-btn icon smaller" data-action="bold" data-tag-name="b" title="Bold">
+            <img src="https://img.icons8.com/fluency-systems-regular/48/000000/bold.png"/>
+          </span>
+          <span class="editor-btn icon smaller" data-action="italic" data-tag-name="i" title="Italic">
+            <img src="https://img.icons8.com/fluency-systems-regular/48/000000/italic.png"/>
+          </span>
+          <span class="editor-btn icon smaller" data-action="underline" data-tag-name="u" title="Underline">
+            <img src="https://img.icons8.com/fluency-systems-regular/48/000000/underline.png"/>
+          </span>
+          <span class="editor-btn icon smaller" data-action="strikeThrough" data-tag-name="strike" title="Strike through">
+            <img src="https://img.icons8.com/fluency-systems-regular/48/000000/strikethrough.png"/>
+          </span>
+        </div>
+      
+        <div class="box">
+          <span class="editor-btn icon has-submenu">
+            <img src="https://img.icons8.com/fluency-systems-regular/48/000000/align-left.png"/>
+            <div class="submenu">
+              <span class="editor-btn icon" data-action="justifyLeft" data-style="textAlign:left" title="Justify left">
+                <img src="https://img.icons8.com/fluency-systems-regular/48/000000/align-left.png"/>
+              </span>
+              <span class="editor-btn icon" data-action="justifyCenter" data-style="textAlign:center" title="Justify center">
+                <img src="https://img.icons8.com/fluency-systems-regular/48/000000/align-center.png"/>
+              </span>
+              <span class="editor-btn icon" data-action="justifyRight" data-style="textAlign:right" title="Justify right">
+                <img src="https://img.icons8.com/fluency-systems-regular/48/000000/align-right.png"/>
+              </span>
+              <span class="editor-btn icon" data-action="formatBlock" data-style="textAlign:justify" title="Justify block">
+                <img src="https://img.icons8.com/fluency-systems-regular/48/000000/align-justify.png"/>
+              </span>
+            </div>
+          </span>
+          <span class="editor-btn icon" data-action="insertOrderedList" data-tag-name="ol" title="Insert ordered list">
+            <img src="https://img.icons8.com/fluency-systems-regular/48/000000/numbered-list.png"/>
+          </span>
+          <span class="editor-btn icon" data-action="insertUnorderedList" data-tag-name="ul" title="Insert unordered list">
+            <img src="https://img.icons8.com/fluency-systems-regular/48/000000/bulleted-list.png"/>
+          </span>
+          <span class="editor-btn icon" data-action="outdent" title="Outdent" data-required-tag="li">
+            <img src="https://img.icons8.com/fluency-systems-regular/48/000000/outdent.png"/>
+          </span>
+          <span class="editor-btn icon" data-action="indent" title="Indent">
+            <img src="https://img.icons8.com/fluency-systems-regular/48/000000/indent.png"/>
+          </span>
+      
+        </div>
+        <div class="box">
+          <span class="editor-btn icon" data-action="insertHorizontalRule" title="Insert horizontal rule">
+            <img src="https://img.icons8.com/fluency-systems-regular/48/000000/horizontal-line.png"/>
+          </span>
+        </div>
+      
+      </div>
+      <div class="line">
+      
+        <div class="box">
+          <span class="editor-btn icon smaller" data-action="undo" title="Undo">
+            <img src="https://img.icons8.com/fluency-systems-regular/48/000000/undo--v1.png"/>
+          </span>
+          <span class="editor-btn icon" data-action="removeFormat" title="Remove format">
+            <img src="https://img.icons8.com/fluency-systems-regular/48/000000/remove-format.png"/>
+          </span>
+        </div>
+      
+        <div class="box">
+          <span class="editor-btn icon smaller" data-action="createLink" title="Insert Link">
+            <img src="https://img.icons8.com/fluency-systems-regular/48/000000/link--v1.png"/>
+          </span>
+          <span class="editor-btn icon smaller" data-action="unlink" data-tag-name="a" title="Unlink">
+            <img src="https://img.icons8.com/fluency-systems-regular/48/000000/delete-link.png"/>
+          </span>
+          <span class="editor-btn icon smaller" id="addImage" data-action="add-image"  title="Add Image">
+            <img src="https://img.icons8.com/fluency-systems-regular/48/000000/image.png"/>
+          </span>
+          <span class="editor-btn icon smaller" id="addVideo" data-action="add-video"  title="Add Video">
+            <img src="https://img.icons8.com/fluency-systems-regular/48/000000/video.png"/>
+          </span>
+        </div>
+      
+        <div class="box">
+          <span class="editor-btn icon" data-action="toggle-view" title="Show HTML-Code">
+            <img src="https://img.icons8.com/fluency-systems-regular/48/000000/source-code.png"/>
+          </span>
+        </div>
+      
+      </div>
+    </div>
+    <div class="content-area">
+      <div class="visuell-view" contenteditable id = "note-pad">
+        <!-- <iframe src="" frameborder="0" hidden></iframe> -->
+        <!-- <div id="vid-frame"></div> -->
+        <img id="imgElement">
+      </div>
+      <textarea class="html-view"></textarea>
+    </div>
+  </div>
+ 
+  <div class="modal">
+    <div class="modal-bg"></div>
+    <div class="modal-wrapper">
+      <div class="close">✖</div>
+      <div class="modal-content" id="modalCreateLink">
+        <h3>Insert Link</h3>
+        <input type="text" id="linkValue" placeholder="Link (example: https://webdeasy.de/)">
+        <div class="row">
+          <input type="checkbox" id="new-tab">
+          <label for="new-tab">Open in new Tab?</label>
+        </div>
+        <button class="done">Done</button>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
