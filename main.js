@@ -239,38 +239,6 @@ function changeSize(n) {
   s.style.fontSize = n.value + 'px'
 }
 
-// function changeHeading(e){
-//   document.getElementById("note-pad").formatBlock=e.value;
-// }
-
-// function changeFontColor(args) {
-//   document.selection.characterFormat.fontColor = args.currentValue.hex;
-//   document.focusIn();
-// }
-// document.selectionChange = () => {
-//   setTimeout(() => { onSelectionChange(); }, 20);
-// };
-
-
-
-// Get Selection
-// sel = window.getSelection();
-// if (sel.rangeCount && sel.getRangeAt) {
-//   range = sel.getRangeAt(0);
-// }
-// let colorpicker1 = document.getElementById('foreColor');
-// // Set design mode to on
-// document.designMode = "on";
-// if (range) {
-//   sel.removeAllRanges();
-//   sel.addRange(range);
-// }
-// // Colorize text
-// document.execCommand("ForeColor", false, colorpicker1.value);
-// // Set design mode to off
-// document.designMode = "off";
-
-
 //change the color of the whole text
 var box = document.getElementById('note-pad');
 let colorpicker = document.getElementById('foreColor');
@@ -286,25 +254,3 @@ let colorpicker = document.getElementById('foreColor');
     });
 });
 
-
-// document.getElementById('addImage').onclick = function() {
-// var img = new Image();
-//     img.src = prompt("Url of a picture:");
-    
-//     // check if the URL isn't valid or the resource isn't a picture
-//     img.onerror = function() { alert("Provided URL does not point to a valid picture.") };
-    
-//     img.onload = function() {
-//         document.getElementById("imgElement").src = img.src;
-//     };
-
-//   }
-
-  // document.getElementById('addVideo').onclick = function() {
-    
-  //   var vid = prompt("Url of a video");
-  //   document.getElementById("myIframe").src = vid;
-
-  //   var frame = document.getElementById("vid-frame");
-  //   frame.innerHTML = "<iframe width='560' height='315' src=receivedData frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
-  //     }
