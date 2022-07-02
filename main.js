@@ -1,5 +1,5 @@
 // define vars
-const editor = document.getElementsByClassName('wp-webdeasy-comment-editor')[0];
+const editor = document.getElementsByClassName('SRCODE-TEXT-EDITOR')[0];
 const toolbar = editor.getElementsByClassName('toolbar')[0];
 const buttons = toolbar.querySelectorAll('.editor-btn:not(.has-submenu)');
 const contentArea = editor.getElementsByClassName('content-area')[0];
@@ -254,3 +254,11 @@ let colorpicker = document.getElementById('foreColor');
     });
 });
 
+// document.getElementById('addVideo').onclick = function() {
+    
+  //   var vid = prompt("Url of a video");
+  //   document.getElementById("myIframe").src = vid;
+
+  //   var frame = document.getElementById("vid-frame");
+  //   frame.innerHTML = "<iframe width='560' height='315' src=receivedData frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+  //     }
